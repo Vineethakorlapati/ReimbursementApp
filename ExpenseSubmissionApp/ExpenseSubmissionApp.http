@@ -1,0 +1,7 @@
+@ExpenseApp_Host = http://localhost:5072
+
+# just testing if the app is running (default endpoint)
+GET {{ExpenseApp_Host}}/weatherforecast/
+Accept: application/json
+
+###

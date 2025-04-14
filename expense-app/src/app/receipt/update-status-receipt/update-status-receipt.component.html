@@ -1,0 +1,33 @@
+<div class="container mt-3">
+
+    <h2>Update Receipt Status
+        <a routerLink="/" class="btn btn-primary" style="float: right;">Back To List</a>
+    </h2>
+    <table class="table table-bordered" *ngIf="receipt">
+        <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Description</th>
+            <th>File URL</th>
+        </tr>
+        <tr>
+            <td>{{receipt.date | date}}</td>
+            <td>{{receipt.amount}}</td>
+            <td>{{receipt.description}}</td>
+            <td><a [href]="fileURL+receipt.fileUrl" target="_blank"> View File </a></td>
+        </tr>
+    </table>
+    <form [formGroup]="receiptForm" (ngSubmit)="submit()">
+        <div>
+            <label for="file">Status:</label>
+            <select class="form-control" id="status" formControlName="status" required>
+                <option value="">--select--</option>
+                <option>Pending</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+            </select>
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit" [disabled]="receiptForm.invalid">Submit</button>
+    </form>
+</div>

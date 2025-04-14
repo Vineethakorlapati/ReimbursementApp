@@ -1,0 +1,30 @@
+<div class="container mt-3">
+    <h2>Receipt List <button class="btn btn-success" [routerLink]="['/add']" style="float: right;">  Add Receipt</button> </h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>File URL</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let receipt of receipts;let i = index">
+                <td>{{i+1}}</td>
+                <td>{{ receipt.date | date}}</td>
+                <td>{{ receipt.amount }}</td>
+                <td>{{ receipt.description }}</td>
+                <td><a [href]="fileUrl+receipt.fileUrl" target="_blank">View File</a></td>
+                <td>{{ receipt.status }}</td>
+                <td>
+                    <button class="btn btn-primary" [routerLink]="['/edit', receipt.id]">Update Status</button> &nbsp;
+                    <button class="btn btn-danger" (click)="deleteReceipt(receipt.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

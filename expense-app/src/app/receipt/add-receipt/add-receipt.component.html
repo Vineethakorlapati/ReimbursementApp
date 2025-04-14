@@ -1,0 +1,38 @@
+<div class="container mt-3">
+
+    <h2>Add Receipt
+        <a routerLink="/" class="btn btn-primary" style="float: right;">Back To List</a>
+    </h2>
+    <form [formGroup]="receiptForm" (ngSubmit)="submit()">
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" formControlName="date" required class="form-control" />
+        </div>
+
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" formControlName="amount" required class="form-control" />
+        </div>
+
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" formControlName="description" required class="form-control"></textarea>
+        </div>
+
+        <div>
+            <label for="file">File:</label>
+            <input type="file" id="file" (change)="onFileChange($event)" required class="form-control" />
+        </div>
+        <div>
+            <label for="file">Status:</label>
+            <select class="form-control" id="status" formControlName="status" required>
+                <option value="">--select--</option>
+                <option>Pending</option>
+                <option>Approved</option>
+                <option>Rejected</option>
+            </select>
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit" [disabled]="receiptForm.invalid">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Free\\SAI\\ReceiptApi\\ReceiptApi\\wwwroot\\uploads\\2057fcef-daa4-4b20-82bb-cc0a06bcd8ae.pdf",
+      "PackagePath": "staticwebassets\\uploads\\2057fcef-daa4-4b20-82bb-cc0a06bcd8ae.pdf"
+    },
+    {
+      "Id": "D:\\Projects\\Free\\SAI\\ReceiptApi\\ReceiptApi\\wwwroot\\uploads\\449d5d36-14e4-4b28-8927-8962d2a9d407.pdf",
+      "PackagePath": "staticwebassets\\uploads\\449d5d36-14e4-4b28-8927-8962d2a9d407.pdf"
+    },
+    {
+      "Id": "D:\\Projects\\Free\\SAI\\ReceiptApi\\ReceiptApi\\wwwroot\\uploads\\b7497b8f-e7a0-490a-bef2-1737f62339c2.pdf",
+      "PackagePath": "staticwebassets\\uploads\\b7497b8f-e7a0-490a-bef2-1737f62339c2.pdf"
+    },
+    {
+      "Id": "D:\\Projects\\Free\\SAI\\ReceiptApi\\ReceiptApi\\wwwroot\\uploads\\f299d7ec-15f9-4387-ab8b-2ddeeb3d7238.pdf",
+      "PackagePath": "staticwebassets\\uploads\\f299d7ec-15f9-4387-ab8b-2ddeeb3d7238.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReceiptApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ReceiptApi.props",
+      "PackagePath": "build\\ReceiptApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ReceiptApi.props",
+      "PackagePath": "buildMultiTargeting\\ReceiptApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ReceiptApi.props",
+      "PackagePath": "buildTransitive\\ReceiptApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
